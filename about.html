@@ -2,11 +2,64 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>About Us - ZS Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('background_logo.png') center center no-repeat fixed;
+            background-size: contain;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header img {
+            height: 60px;
+        }
+        nav {
+            margin-left: auto;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .content {
+            padding: 20px;
+            background: rgba(255,255,255,0.85);
+            margin: 20px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>About ZS Home</h1>
-    <p>ZS Home is a B2B service provider offering remote team setups, virtual assistants, and specialized headcount solutions for businesses globally.</p>
-    <a href="index.html">Back to Home</a>
+    <header>
+        <img src="logo.png" alt="ZS Home Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="content">
+        <h1>About Us</h1><p>ZS Home specializes in providing remote teams, headcount outsourcing, and B2B staffing solutions. We help companies scale quickly and cost-effectively.</p>
+    </div>
+    <footer>
+        &copy; 2025 ZS Home. All rights reserved.
+    </footer>
 </body>
 </html>
