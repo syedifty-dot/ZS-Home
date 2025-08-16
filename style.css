@@ -1,51 +1,73 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff8f5;
+    background-color: #f9f9f9;
     color: #333;
 }
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 header {
-    background: linear-gradient(to right, #ff66b2, #ff9966);
+    background-color: #f2a900;
     color: white;
-    padding: 1rem;
+    padding: 20px 0;
     text-align: center;
 }
-header nav a {
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #f2a900;
     color: white;
-    margin: 0 10px;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+a {
+    color: #0066cc;
     text-decoration: none;
 }
-header nav a:hover {
+a:hover {
     text-decoration: underline;
 }
-main {
-    padding: 2rem;
+.contact-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-}
-form input, form textarea {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-button {
-    background-color: #ff66b2;
-    color: white;
-    border: none;
-    padding: 0.7rem;
-    cursor: pointer;
-}
-button:hover {
-    background-color: #ff3385;
+.contact-section h2 {
+    margin-top: 0;
 }
 footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #ff9966;
+    background-color: #333;
     color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+@media (max-width: 768px) {
+    th, td {
+        padding: 8px;
+    }
+    header h1 {
+        font-size: 1.5em;
+    }
 }
